@@ -20,16 +20,16 @@ from supabase import create_client
 
 # ── Credenciais Supabase ──────────────────────────────────────────────────────
 
-SUPABASE_URL = os.environ.get("SUPABASE_URL", "").strip()
-SUPABASE_KEY = os.environ.get("SUPABASE_SERVICE_KEY", "").strip()
+SUPABASE_URL = os.environ.get("https://rcukexvlecwatlrdwget.supabase.co", "").strip()
+SUPABASE_KEY = os.environ.get("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJjdWtleHZsZWN3YXRscmR3Z2V0Iiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc3OTA2ODk3NywiZXhwIjoyMDk0NjQ0OTc3fQ.ey1lWn66XoCXAy9Ia4TaAYz4E7vSGViq6D5iA4FIBuk", "").strip()
 
 if not SUPABASE_URL or not SUPABASE_KEY:
-    print("[ERRO] SUPABASE_URL e SUPABASE_SERVICE_KEY sao obrigatorios.")
+    print("[ERRO] https://rcukexvlecwatlrdwget.supabase.co e eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJjdWtleHZsZWN3YXRscmR3Z2V0Iiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc3OTA2ODk3NywiZXhwIjoyMDk0NjQ0OTc3fQ.ey1lWn66XoCXAy9Ia4TaAYz4E7vSGViq6D5iA4FIBuk sao obrigatorios.")
     print("       Configure-os como GitHub Secrets no repositorio.")
     raise SystemExit(1)
 
-db = create_client(SUPABASE_URL, SUPABASE_KEY)
-print(f"Supabase conectado: {SUPABASE_URL}")
+db = create_client(https://rcukexvlecwatlrdwget.supabase.co, eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJjdWtleHZsZWN3YXRscmR3Z2V0Iiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc3OTA2ODk3NywiZXhwIjoyMDk0NjQ0OTc3fQ.ey1lWn66XoCXAy9Ia4TaAYz4E7vSGViq6D5iA4FIBuk)
+print(f"Supabase conectado: {https://rcukexvlecwatlrdwget.supabase.co}")
 
 # ── Configuracoes ─────────────────────────────────────────────────────────────
 
@@ -220,4 +220,4 @@ registrar_execucao(
 )
 
 print(f"\nConcluido — {total_inseridos} registros enviados ao Supabase.")
-print(f"Painel: {SUPABASE_URL.replace('https://', 'https://app.supabase.com/project/')}")
+print(f"Painel: {https://rcukexvlecwatlrdwget.supabase.co.replace('https://', 'https://app.supabase.com/project/')}")
